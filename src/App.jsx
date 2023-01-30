@@ -5,6 +5,7 @@ import Sobre from "./Components/Sobre"
 import Home from "./Components/Home"
 import styled from "styled-components"
 import Projetos from "./Components/Projetos"
+import Contato from "./Components/Contato"
 
 
 const ContainerApp = styled.div`
@@ -23,6 +24,7 @@ function App() {
       <Home />
       <Sobre/>
      <Projetos/>
+     <Contato/>
       </ContainerApp>
     
     
