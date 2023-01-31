@@ -1,6 +1,7 @@
 
 import { useForm } from "react-hook-form"
 import styled from "styled-components"
+import emailjs from "@emailjs/browser"
 
 
 
@@ -52,9 +53,29 @@ const Form = () => {
 
     const {register, handleSubmit} = useForm()
 
-    const onSubmit = (data) => {
-        console.log(data);}
+    const onSubmit = (data, e) => {
 
+       /* tirar comments para ativar serviço emailJS
+
+
+       const TemplateParams = {
+        from_nome: data.nome,
+        message: data.mensagem,
+        email: data.email
+           }
+          emailjs.send("service_hw0fon5", "template_hed8gxq", TemplateParams, "QVmEs4h7FwC5nD5ne" )
+           .then((response)=> {
+               //Aplicar modal Sucess
+               e.target.reset()
+               console.log("enviado com sucesso", response.status, response.text)
+           }, (err) => {
+               //Aplicar modal error 
+               console.log("Deu error", err)
+           })
+       */ 
+    }
+
+    
     return (
         <FormContainer>  
             <Title>Email</Title>

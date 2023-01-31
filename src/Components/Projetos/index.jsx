@@ -7,7 +7,7 @@ const ProjetosContainer = styled.div`
 display:flex;
 width: 70%;
 margin: 0 auto;
-min-height: 100vh;
+min-height: 100%;
 gap: 2vw;
 flex-wrap: wrap;
 justify-content: space-around;
