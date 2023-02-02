@@ -6,6 +6,7 @@ import Home from "./Components/Home"
 import styled from "styled-components"
 import Projetos from "./Components/Projetos"
 import Contato from "./Components/Contato"
+import Habilidades from "./Components/Habilidades"
 
 
 const ContainerApp = styled.div`
@@ -23,6 +24,7 @@ function App() {
       <ContainerApp>
       <Home />
       <Sobre/>
+      <Habilidades/>
      <Projetos/>
      <Contato/>
       </ContainerApp>

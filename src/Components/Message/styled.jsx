@@ -11,7 +11,7 @@ export const Escrita = styled.div`
     font-size: ${props => props.fontSize || '50px' } ;
     align-self: ${props => props.alignSelf || 'start' };
     text-align: ${props => props.textAlign || 'start' };
-    color: #000;
+    color: #FFF;
     overflow: hidden;
     margin: 0 auto;
     display: inline-block;
@@ -19,7 +19,7 @@ export const Escrita = styled.div`
     :after{
     content: '';
     display: inline-block;
-    background-color: black;
+    background-color: white;
     height: 35px;
     width: 4px;
     animation: cursor 0.4s infinite;

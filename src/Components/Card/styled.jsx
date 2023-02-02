@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const CardContainer = styled.div`
-'DM Sans', sans-serif;
+font-family: 'DM Sans', sans-serif;
 width: 125px;
 transition: transform 0.3s ease-in-out;
 height: 130px;
@@ -19,9 +19,9 @@ box-shadow: 0 0 25px -6px black;
     display: block;
     position: relative;
     width: 125px;
-    height: 4px;
+    height: 2px;
   
-    background-image: linear-gradient(90deg, #86b34f 0%, #39ff14 92.32%);}
+    background-image: linear-gradient(90deg,  #F4C430 0%, #FFd700 92.32%);}
 &:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
@@ -39,6 +39,6 @@ padding: 5px;
 align-self: center;
 font-size: 15px;
 margin: 0 auto;
-color: #39ff14;
+color:  #F4C430;
 text-align: center;
 `

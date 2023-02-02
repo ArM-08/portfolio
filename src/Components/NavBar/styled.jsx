@@ -13,8 +13,8 @@ export const NavContainer = styled.nav`
     position: absolute;
     top: 98px;
     width: 100%;
-    height: 4px;
-    background-image: linear-gradient(90deg, #86b34f 0%, #39ff14 92.32%);}
+    height: 2px;
+    background-image: linear-gradient(90deg, #F4C430 0%, #FFd700 92.32%);}
 `;
 export const Logo = styled.a`
 font-family: 'Cormorant SC', serif;
