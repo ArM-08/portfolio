@@ -1,5 +1,5 @@
 
-import { Container, SobreContainer, ImgPerfil, MessageContainer, TextoSobre, ContainerButton, Button, MidiasContainer, ButtonMidia} from "./styled";
+import { Container, SobreContainer, ImgPerfil, MessageContainer, TextoSobre, ContainerButton, Button, MidiasContainer, ButtonMidia, ContainerPerfil} from "./styled";
 import Linkedin from "./../../assets/images/Linkedin.png"
 import GitHub from "./../../assets/images/gitHub.png"
 import perfil from "./../../assets/images/perfilpng.png"
@@ -15,11 +15,13 @@ const Sobre = () => {
           </ContainerButton>
           </MessageContainer>
          
+         <ContainerPerfil>
             <ImgPerfil src={perfil}/>
             <MidiasContainer>
               <ButtonMidia as="a" href="https://www.linkedin.com/in/alan-de-oliveira-ribeiro-moraes/"logo={Linkedin}></ButtonMidia>
               <ButtonMidia as="a" href="https://github.com/ArM-08" logo={GitHub}></ButtonMidia>
             </MidiasContainer>
+            </ContainerPerfil>
           </SobreContainer>
          
             </Container>

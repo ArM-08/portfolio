@@ -1,9 +1,19 @@
 import styled from "styled-components";
 import Form from "./../Form"
 const ContatoContainer = styled.div`
-width: 70%;
-min-height: 100%;
+width: 80%;
+min-height: 100vh;
+height: 100%;
 margin: 0 auto;
+display:flex;
+align-items: center;
+justify-content: center;
+`
+const Container = styled.div`
+width: 100%;
+min-height: 100vh;
+height: 100%;
+background: #000;
 `
 
 
@@ -12,9 +22,11 @@ margin: 0 auto;
 
 const Contato = () => {
     return (
+        <Container>
         <ContatoContainer>
             <Form></Form>
         </ContatoContainer>
+        </Container>
     )
 }
 

@@ -9,14 +9,15 @@ import SpringBoot from "./../../assets/images/SpringBoot.png"
 import Bootstrap from "./../../assets/images/Bootstrap.png"
 import JS from "./../../assets/images/JavaScript.png"
 import Card from "../Card";
-import {Tecnologias, ContainerCard, ContainerHabilidade, BackgroundHabilidade} from "./styled";
+import {Titulo, ContainerCard, ContainerHabilidade, BackgroundHabilidade, ExpProfissional, FormacaoAcademica, ContainerFormacao} from "./styled";
+import TimeLine from "../TimeLine"
 
 
 const Habilidades = () =>{
     return (
         <BackgroundHabilidade>
         <ContainerHabilidade>
-        <Tecnologias>Habilidades tecnicas</Tecnologias>
+        <Titulo>Habilidades tecnicas</Titulo>
         <ContainerCard>
        
           <Card img={JS} titulo={'JavaScript'}></Card>
@@ -30,6 +31,16 @@ const Habilidades = () =>{
           <Card  img={SpringBoot} titulo={'SpringBoot'}></Card>
           <Card  img={Bootstrap} titulo={'Bootstrap'}></Card>
           </ContainerCard>
+          <ContainerFormacao>
+          <ExpProfissional>
+          <Titulo>Experiência Profissional</Titulo>
+          <TimeLine items={[{ title: "2016 - Até o momento", descricao: "Motorista de Aplicativo - Uber · Autônomo" }, { title: "2019 - 2021", descricao: "Criador de Conteúdo - Twitch" }, { title: "2011 - 2019", descricao: "Cabo (Motorista Categoria D) - Exército Brasileiro" }  ]} ></TimeLine>
+          </ExpProfissional>
+          <FormacaoAcademica>
+          <Titulo>Formação Acadêmica</Titulo>
+          <TimeLine items={[{title: "2022 - 2022", descricao: "Desenvolvedor Full Stack - RecodePro"}, { title: "2019 - 2021", descricao: "Graduação - Gestão em tecnologia da Informação - Anhembi Morumbi" }]} ></TimeLine>
+          </FormacaoAcademica>
+          </ContainerFormacao>
         </ContainerHabilidade>
         </BackgroundHabilidade>
     )

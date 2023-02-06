@@ -13,7 +13,7 @@ grid-template-columns: repeat (1, 1fr);
 grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 10px;
 justify-content: center;
-box-shadow: 0 0 25px -6px black;
+box-shadow: 0px 0px 15px -5px white;
 &:after {
     content: '';
     display: block;

@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const Container = styled.div`
 width: 80%;
 margin: 0 auto;
-margin-top: 50px;
 min-height: 100vh;
 height: 100%;
 display: flex;
@@ -22,16 +21,29 @@ text-align: center;
 export const MidiasContainer = styled.div`
 display: flex;
 gap:30px;
+flex-direction: column;
+align-self: center;
+
 `
+export const ContainerPerfil = styled.div`
+display: flex;
+gap:30px;
+
+`
+
 
 export const SobreContainer = styled.div`
 display: flex;
-justify-content: center;
+
+justify-content: space-between;
 flex-wrap: wrap;
-gap: 20%;
 align-items: center;
 min-height: 100vh;
 height: 100%;
+@media(max-width: 1440px){
+   
+    justify-content: space-around;
+}
 `
 
 export const ContainerButton = styled.div`
@@ -51,16 +63,17 @@ display:flex;
 justify-content: center;
 align-items: center;
 color: #000;
-
+font-family: 'DM Sans', sans-serif;
 `
 export const ButtonMidia = styled.button`
 background-image: url(${props=> props.logo || "#000" });
 background-color: #FFF;
-width: 55px;
-height: 55px;
+width: 45px;
+height: 45px;
 background-size: 100% 100%;
 border-radius: 50px;
 border: none;
+
 `
 
 export const ImgPerfil = styled.img`
@@ -79,11 +92,14 @@ background-size: 120% 120%;
 `
 
 export const MessageContainer = styled.div`
-width: 40%;
-min-width: 250px;
+width: 50%;
+min-width: 300px;
 max-height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
 gap: 5vh;
+@media (max-width: 1500px){
+    width:40%;
+}
     `

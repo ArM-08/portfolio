@@ -1,7 +1,10 @@
-import { FormContainer, Title, FormInput, Label, Input, Mensagem, Button, ToastSucess, ToastCol1, ToastCol2  } from './styled';
+import { FormContainer, Title, FormInput, Label, Input, Mensagem, Button } from './styled';
 import { useForm, ValidationError } from '@formspree/react';
 import { useEffect, useRef, useState} from "react";
 import React from 'react';
+import ToastMessage from "./../ToastMessage"
+
+
 
 
 
@@ -10,13 +13,17 @@ const Form = () => {
 const [toast, openToast] = useState(false)
     const [state, handleSubmit] = useForm("mrgveyky")
     const formRef = useRef(null)
+
  useEffect(() => {
    
-    if(state.succeeded)
+    if(state.succeeded){
     openToast(true)
-        formRef.current.reset();
-      
- })
+    setTimeout(()=> {
+        openToast(false);  
+    }, 2000);
+} 
+formRef.current.reset();
+ },)
 
     return (
         <FormContainer>  
@@ -34,15 +41,7 @@ const [toast, openToast] = useState(false)
                 <Button type="submit" disabled={state.submitting}>Enviar</Button>
                 <ValidationError errors={state.errors} />
             </FormInput>
-            {toast && <ToastSucess>
-                <ToastCol1>
-               
-                </ToastCol1>
-                <ToastCol2>
-                <p>Success</p>
-            <p>Your changes are saved successfully</p>
-            </ToastCol2>
-            </ToastSucess>}
+            {toast && <ToastMessage/>}
             </FormContainer>
     )
 }

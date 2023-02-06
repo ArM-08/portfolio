@@ -1,24 +1,24 @@
 import styled from "styled-components"
+import fecharImg from "./../../assets/images/fechar.png"
+
 
 export const Modal = styled.div`
 position: fixed;
 border-radius: 20px;
 top: 25%;
-bottom: 50%;
 left: 20%;
 right: 20%;
 background: #FFF;
-background-size: 100% 100%;
-background-position: center;
-background-repeat: no-repeat;
 z-index: 1;
+height:auto;
 min-width: 60vw;
-min-height: 50vh;
-height: auto;
-display: grid;
-grid-template-columns: 50% 50%;
-grid-template-rows: 80% auto;
-grid-auto-rows: minmax(80%, auto)
+min-height: auto;
+display: flex;
+gap: 30px;
+padding:20px;
+flex-wrap: wrap;
+overflow: auto;
+justify-content: center;
 animation: fadein 1s;
 @keyframes fadein {
 	from {
@@ -28,20 +28,32 @@ animation: fadein 1s;
 		opacity:1;
 	}
 }
+@media (max-width:801px){
+  top: 12%;
+  bottom: 1%;
+}
 `
 export const Fechar = styled.button`
+background-image: url(${fecharImg});
+background-size: 100% 100%;
 position: absolute;
-right: 10px;
-top: 5px;
-  background: transparent;
+width: 40px;
+height: 40px;
+right: 12px;
+top: 8px;
+background-color: transparent;
   border: none;
   cursor: pointer;
 width: 40px;
 border-radius: 10px;
-color: #CF0E0E;
+transition: transform 1s;
 &:hover{
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(90deg);
+
 }
+@media (max-width:801px){
+  height: 20px;
+  width: 20px;
 `
 export const Background = styled.div`
   position: fixed;
@@ -50,17 +62,23 @@ export const Background = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-
+ 
 `;
 
-export const ImgModal = styled.div`
-margin: 15px;
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 1;
-grid-row-end: 2;
-width: 100%;
+export const ContainerImgProject = styled.div`
+display: flex;
+gap: 2vh;
+width: 45%;
 height: 100%;
+flex-direction: column;
+@media (max-width:801px){
+  width: 90%;
+  height: 50%;
+
+`
+export const ImgModal = styled.div`
+width: 100%; 
+min-height: 400px;
 background-image: url(${props => props.img});
 background-size: 100% 100%;
 background-position: center;
@@ -71,40 +89,53 @@ border-radius: 10px;
 border: 1px solid;
 border-color:
 rgb(213, 220, 226);
+@media (max-width:801px){
+  align-self: center;
+  min-height: 300px;
+
 `
 
 export const TecnologiasUsadas = styled.div`
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 2;
-grid-row-end: 3;
 display: flex;
+
+font-size: 36px;
 justify-content: space-around;
+`
+export const ContainerDescricao = styled.div`
+display:flex;
+min-width: 200px;
+max-width: 600px;
+width: 45%;
+min-height: 60%;
+flex-direction: column;
+gap: 20px;
+@media (max-width:801px){
+  width: 100%;
+  height: 50%;
+
+`
+export const TitleProject = styled.h1`
+color: #000;
+font-family: 'DM Sans', sans-serif;
+font-size: 30px;
+text-align: center;
 `
 
 export const DescricaoModal = styled.p`
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 1;
-grid-row-end: 2;
-max-width: 600px;
-min-height: 60%;
-margin: 50px;
+font-family: 'DM Sans', sans-serif;
+
 overflow: auto;
 `
 
 export const Buttons = styled.div`
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 2;
-grid-row-end: 3;
+
 display: flex;
 justify-content: space-around;
 align-items: center;
 `
 
 export const Site = styled.button`
-
+font-family: 'DM Sans', sans-serif;
 border-radius: 30px;
 background: #0088ff;
 color: #FFF;
@@ -112,11 +143,14 @@ width: 30%;
 min-height: 40px;
 border: none;
 cursor: pointer;
-
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
 `
 
 export const Git = styled.button`
-
+font-family: 'DM Sans', sans-serif;
 border-radius: 30px;
 background: #0088ff;
 width: 30%;
@@ -124,5 +158,9 @@ color: #FFF;
 min-height: 40px;
 border: none;
 cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
 
 `
