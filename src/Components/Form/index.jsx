@@ -1,7 +1,7 @@
 import { FormContainer, Title, FormInput, Label, Input, Mensagem, Button } from './styled';
 import {useState} from "react";
 import React from 'react';
-import ToastMessage from "./../ToastMessage"
+import Toast from "./../ToastMessage"
 import emailjs from "@emailjs/browser"
 
 
@@ -9,15 +9,17 @@ import emailjs from "@emailjs/browser"
 
 const Form = () => {
 
-const timeToast = () =>{
+const timeToast = (timer) =>{
     setTimeout(() => {
         openToast(false);
-    }, 2000)
+    }, timer)
 }
+const [type, setType] = useState('')
 const [toast, openToast] = useState(false)
 const [name, setName] = useState('')
 const [email, setEmail] = useState('')
 const [message, setMessage]= useState('')
+
 const handleSubmit = (e) => {
     e.preventDefault()
 const templateParams = {
@@ -27,16 +29,20 @@ const templateParams = {
 }
     {
         emailjs.send("service_hw0fon5", "template_hed8gxq", templateParams, "QVmEs4h7FwC5nD5ne")
-        .then((response) => {
+        .then(() => {
+            setType('sucess')
             openToast(true)
             setName('')
             setEmail('')
             setMessage('')
-            timeToast()
+            timeToast(4000)
             
             
-        }, (err)=> {
-            console.log("error")
+        }, ()=> {
+            
+            setType('error')
+            openToast(true)
+            timeToast(10000)
         })
     }
 
@@ -46,16 +52,16 @@ const templateParams = {
             <Title>Email</Title>
             <FormInput onSubmit={handleSubmit}>
                 <Label>Nome</Label>
-                <Input name="nome" type="text" id="name" placeholder="Nome" required onChange={(e) => setName(e.target.value)} value={name}/>
+                <Input name="nome" type="text" placeholder="Nome" required onChange={(e) => setName(e.target.value)} value={name}/>
                 <Label>Email</Label>
-                <Input  name="email" type="email" id="email" placeholder="meuemail@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onChange={(e) => setEmail(e.target.value)} value={email}></Input>
+                <Input  name="email" type="email"  placeholder="meuemail@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onChange={(e) => setEmail(e.target.value)} value={email}></Input>
                 <Label>Mensagem</Label>
-                <Mensagem  name="mensagem" type="textarea" id="mensagem"placeholder="Mensagem" required onChange={(e) => setMessage(e.target.value)} value={message}></Mensagem>
+                <Mensagem  name="mensagem" type="textarea" placeholder="Mensagem" required onChange={(e) => setMessage(e.target.value)} value={message}></Mensagem>
 
                 <Button type="submit">Enviar</Button>
 
             </FormInput>
-            {toast && <ToastMessage/>}
+            {toast && <Toast type={type}/>}
             </FormContainer>
     )
 }
