@@ -42,7 +42,7 @@ font-size: 30px;
 position: relative;
 opacity:0;
 top: -30%;
-left: 30%;
+margin: 0 auto;
 color: #FFF;
 transition: opacity 1s;  
 @media (max-width: 568px){

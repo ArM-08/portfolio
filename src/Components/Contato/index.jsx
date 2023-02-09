@@ -5,10 +5,10 @@ import {SiLinkedin, SiGithub, SiGmail, SiWhatsapp} from "react-icons/si";
 const Contato = () => {
   return (
     <Container>
-    
-      <ContactContainer>
-      <Faixa>
+    <Faixa>
       </Faixa>
+      <ContactContainer>
+      
       <MyContact>
     <TituloContato>Alan de Oliveira Ribeiro Moraes</TituloContato>
 

@@ -14,7 +14,7 @@ const CardsProjetos = (props) => {
         </Button>
       </CardProjContainer>
       {open && (
-        <ModalProject open={open} closed={() => setModal(!open)}></ModalProject>
+        <ModalProject open={open} closed={() => setModal(!open)} img={props.img} name={props.title} description={props.description} tecnologias={props.tecnologias} github={props.github} link={props.link}></ModalProject>
       )}
     </>
   );

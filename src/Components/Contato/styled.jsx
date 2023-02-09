@@ -14,22 +14,24 @@ font-family: 'DM Sans', sans-serif;
 `
 export const Faixa = styled.div`
 width: 250px;
-height:100vh;
+min-height:100vh;
+height: 100%;
 margin: 0 auto;
 background: #F4C430;
 position: absolute;
-z-index: 0;
+z-index: 1;
 `
 export const Container = styled.div`
 width: 100%;
 min-height: 100vh;
 height: 100%;
 background: #000;
+display:flex;
+justify-content: center; 
 `
 
 export const MyContact = styled.div`
 width: 45%;
-
 display: flex;
 justify-content: center;
 align-items: center;
@@ -42,13 +44,14 @@ z-index: 1;
 export const TituloContato = styled.h1`
 color: #FFF;
 text-align: center;
+
 `
 
 export const IconesContainer = styled.div`
 font-size: 36px;
 display: flex;
-gap: 1vw;
-padding: 2vh;
+gap: 2vw;
+
 `
 export const Icone = styled.a`
 text-decoration: none;

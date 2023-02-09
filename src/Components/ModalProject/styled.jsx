@@ -9,7 +9,7 @@ top: 25%;
 left: 20%;
 right: 20%;
 background: #FFF;
-z-index: 1;
+z-index: 998;
 height:auto;
 min-width: 60vw;
 min-height: auto;
@@ -29,7 +29,7 @@ animation: fadein 1s;
 	}
 }
 @media (max-width:801px){
-  top: 12%;
+  top: 20%;
   bottom: 1%;
 }
 `
@@ -70,6 +70,8 @@ display: flex;
 gap: 2vh;
 width: 45%;
 height: 100%;
+min-height: 350px;
+z-index: 99;
 flex-direction: column;
 @media (max-width:801px){
   width: 90%;
@@ -97,11 +99,12 @@ rgb(213, 220, 226);
 
 export const TecnologiasUsadas = styled.div`
 display: flex;
-
+z-index: 99;
 font-size: 36px;
 justify-content: space-around;
 `
 export const ContainerDescricao = styled.div`
+z-index: 99;
 display:flex;
 min-width: 200px;
 max-width: 600px;
@@ -135,6 +138,7 @@ align-items: center;
 `
 
 export const Site = styled.button`
+text-decoration: none;
 font-family: 'DM Sans', sans-serif;
 border-radius: 30px;
 background: #0088ff;
@@ -150,6 +154,7 @@ gap: 15px;
 `
 
 export const Git = styled.button`
+text-decoration: none;
 font-family: 'DM Sans', sans-serif;
 border-radius: 30px;
 background: #0088ff;

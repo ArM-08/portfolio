@@ -11,8 +11,7 @@ flex-wrap: wrap;
 flex-direction: column;
 margin: 0 auto;
 margin-top: 50px;
-z-index: 1;
-
+z-index: 2;
 `
 
 export const Title = styled.h1`

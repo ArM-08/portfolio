@@ -17,7 +17,7 @@ margin:0 auto;
 
 
 function App() {
- 
+  
   return (
     <div className="App">
       <NavBar/>
