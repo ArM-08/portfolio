@@ -3,7 +3,7 @@ const Card = (props) => {
   return (
     <CardContainer>
       <Titulo>{props.titulo}</Titulo>
-      <ImgTech src={props.img}></ImgTech>
+      <ImgTech>{props.img}</ImgTech>
     </CardContainer>
   );
 };

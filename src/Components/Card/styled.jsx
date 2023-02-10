@@ -8,6 +8,7 @@ transition: transform 0.3s ease-in-out;
 height: 130px;
 background: #2e2e2e;
 border-start-start-radius: 40px 40px;
+border-start-end-radius: 40px 40px;
 display: grid;
 grid-template-columns: repeat (1, 1fr);
 grid-template-rows: repeat(2, 1fr);
@@ -28,10 +29,12 @@ box-shadow: 0px 0px 15px -5px white;
 }
 `
 
-export const ImgTech = styled.img`
-width: 75px;
-height: 75px;
+export const ImgTech = styled.h1`
+
+font-size: 50px;
+color: #F4C430;
 margin: 0 auto;
+text-align: center;
 
 `
 export const Titulo = styled.h2`
