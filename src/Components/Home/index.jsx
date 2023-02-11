@@ -1,7 +1,16 @@
-import { BackgroundHome, HomeContainer } from "./styled";
+import { BackgroundHome, HomeContainer, Seta, SetaContainer} from "./styled";
 import Message from "../Message";
 
 const Home = () => {
+
+  const SetaScroll = () => {
+    window.scrollTo({
+      top: 900,
+      behavior: 'smooth',
+    });
+  }
+
+
   return (
     <BackgroundHome>
       <HomeContainer>
@@ -12,6 +21,12 @@ const Home = () => {
 "
           fontSize="60px"
         />
+        <SetaContainer onClick={SetaScroll}>   
+        <Seta></Seta>
+        <Seta></Seta>
+        <Seta></Seta>
+        </SetaContainer>
+
       </HomeContainer>
     </BackgroundHome>
   );
