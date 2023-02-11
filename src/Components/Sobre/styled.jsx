@@ -75,18 +75,49 @@ border-radius: 50px;
 border: none;
 
 `
+export const FundoImg = styled.div`
+
+margin: 30px 0 30px 0;
+align-self: center;
+width: 400px;
+height: 496px;
+border-radius: 330px;
+background:#F4C430;
+background-size: 120% 120%;
+@media (max-width: 468px){
+    width: 250px;
+    height: 396px;
+}
+`
+export const CircleImg = styled.div`
+align-self: center;
+position: absolute;
+z-index: -1;
+width: 450px;
+height: 495px;
+border-radius: 330px;
+background: transparent;
+border: 3px solid #F4C430;
+background-size: 120% 120%;
+@media (max-width: 468px){
+    width: 300px;
+    height: 395px;
+    border: 2px solid #F4C430;
+}
+`
+
 
 export const ImgPerfil = styled.img`
 align-self: center;
 width: 450px;
 height: 500px;
-border-radius: 20px;
-background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23F4C430' d='M43.7 -75.7C56.5 -68.3 66.6 -56.3 71.8 -42.9C77 -29.5 77.3 -14.8 76.7 -0.3C76.2 14.1 74.8 28.3 68.7 40.1C62.6 51.9 51.8 61.5 39.6 68.5C27.3 75.5 13.7 80.1 -1.3 82.3C-16.2 84.4 -32.4 84.3 -46.2 78.2C-60.1 72.1 -71.6 60 -77 46C-82.3 32 -81.4 16 -81.9 -0.3C-82.5 -16.6 -84.3 -33.2 -78 -45.4C-71.6 -57.7 -57.1 -65.7 -42.7 -72.2C-28.3 -78.7 -14.2 -83.8 0.6 -84.9C15.4 -86 30.9 -83.1 43.7 -75.7Z' transform='translate(100 100)' /%3E%3C/svg%3E");
-}
+border-radius:210px;
+border: 3px solid #F4C430;
 background-size: 120% 120%;
 @media (max-width: 468px){
     width: 300px;
-    height: 350px;
+    height: 408px;
+   border: none;
 }
 
 `

@@ -8,7 +8,7 @@ const Home = () => {
         <Message
           textAlign="center"
           alignSelf="center"
-          text="Olá, sou Alan, bem vindo ao meu portfolio.
+          text="Prazer, me chamo Alan Moraes. Desenvolvedor Full Stack.
 "
           fontSize="60px"
         />
