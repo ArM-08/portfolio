@@ -13,8 +13,8 @@ const Home = () => {
 
   return (
     <BackgroundHome>
-      <HomeContainer>
-        <Message
+      <HomeContainer >
+        <Message 
           textAlign="center"
           alignSelf="center"
           text="Prazer, me chamo Alan Moraes. Desenvolvedor Full Stack.

@@ -3,12 +3,17 @@ import { Container, SobreContainer, ImgPerfil, MessageContainer, TextoSobre, Con
 import Linkedin from "./../../assets/images/Linkedin.png"
 import GitHub from "./../../assets/images/gitHub.png"
 import perfil from "./../../assets/images/perfilpng.png"
+
+
+
+
 const Sobre = () => {
+
     return(
         <Container>
-        <SobreContainer>
-        <MessageContainer>
-          <TextoSobre>Profissional graduado em Gestão da Tecnologia da Informação, em fase de transição de carreira, a
+        <SobreContainer >
+        <MessageContainer data-aos="fade-up">
+          <TextoSobre className='show'>Profissional graduado em Gestão da Tecnologia da Informação, em fase de transição de carreira, a
 procura de uma oportunidade na área de TI onde eu possa colocar em prática todo o meu
 conhecimento teórico, a fim de aprimorar e expandir meus conhecimentos, visando sempre uma boa
 qualificação profissional.</TextoSobre>
@@ -18,7 +23,7 @@ qualificação profissional.</TextoSobre>
           </ContainerButton>
           </MessageContainer>
          
-         <ContainerPerfil>
+         <ContainerPerfil data-aos="fade-up">
           <FundoImg>
             <CircleImg/>
             <ImgPerfil src={perfil}/>

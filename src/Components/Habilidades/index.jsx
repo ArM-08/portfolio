@@ -13,17 +13,17 @@ import { HabilidadesDB } from "../db/dadosHabilidadesDB";
 
 const Habilidades = () => {
   return (
-    <BackgroundHabilidade>
-      <ContainerHabilidade>
-        <Titulo>Habilidades tecnicas</Titulo>
-        <ContainerCard>
+    <BackgroundHabilidade >
+      <ContainerHabilidade >
+        <Titulo data-aos="fade-down-right">Habilidades tecnicas</Titulo>
+        <ContainerCard data-aos="fade-up-right" >
           {HabilidadesDB.map(habilidades => 
-           <Card key={habilidades.id} titulo={habilidades.name} img={habilidades.img}></Card> )}
+           <Card  key={habilidades.id} titulo={habilidades.name} img={habilidades.img}></Card> )}
         </ContainerCard>
         <ContainerFormacao>
-          <ExpProfissional>
-            <Titulo>Experiência Profissional</Titulo>
-            <TimeLine
+          <ExpProfissional data-aos="fade-down-right">
+            <Titulo data-aos="fade-down-right">Experiência Profissional</Titulo>
+            <TimeLine 
               items={[
                 {
                   title: "2016 - Até o momento",
@@ -38,11 +38,11 @@ const Habilidades = () => {
                   descricao:
                     "Cabo (Motorista Categoria D) - Exército Brasileiro",
                 },
-              ]}
-            ></TimeLine>
+              ]} 
+            />
           </ExpProfissional>
-          <FormacaoAcademica>
-            <Titulo>Formação Acadêmica</Titulo>
+          <FormacaoAcademica  data-aos="fade-down-left">
+            <Titulo data-aos="fade-down-left">Formação Acadêmica</Titulo>
             <TimeLine
               items={[
                 {

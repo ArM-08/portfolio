@@ -16,6 +16,20 @@ color: #000;
 font-family: 'DM Sans', sans-serif;
 font-size: 30px;
 text-align: center;
+&:show {
+    position: absolute;
+    left: -30em;
+    width: 30em;
+    height: 20em;
+    -webkit-animation: slide-in 1s forwards;
+    animation: slide-in 1s forwards;
+ }
+ @-webkit-keyframes slide-in {
+   100% { left: 0 }
+ }
+ @keyframes slide-in {
+   100% { left: 0 }
+ }
 
 `
 export const MidiasContainer = styled.div`

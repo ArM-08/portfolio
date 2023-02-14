@@ -16,10 +16,11 @@ const Projetos = () => {
   }
 
   return (
-    <ProjetosContainer>
-      <TitleProjeto>Projetos</TitleProjeto>
+    <ProjetosContainer data-aos="fade-up"
+    >
+      <TitleProjeto >Projetos</TitleProjeto>
       <InputPesquisa placeholder="Pesquise por nome, categoria ou stacks " onChange={evento => fazPesquisa(evento)}></InputPesquisa>
-      <CardsContainer>
+      <CardsContainer >
         {pesquisado === true ? 
         (pesquisa.length === 0 ? <TitleProjeto>Nenhum projeto encontrado</TitleProjeto> :
         pesquisa.map( projetos =>(

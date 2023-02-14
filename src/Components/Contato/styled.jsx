@@ -19,7 +19,7 @@ height: 100%;
 margin: 0 auto;
 background: #F4C430;
 position: absolute;
-z-index: 1;
+z-index: 0;
 `
 export const Container = styled.div`
 width: 100%;

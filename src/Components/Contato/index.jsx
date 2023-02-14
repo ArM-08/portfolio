@@ -4,12 +4,13 @@ import {SiLinkedin, SiGithub, SiGmail, SiWhatsapp} from "react-icons/si";
 
 const Contato = () => {
   return (
-    <Container>
+    <Container id="contato" >
     <Faixa>
       </Faixa>
-      <ContactContainer>
+      <ContactContainer data-aos="fade-up"
+    >
       
-      <MyContact>
+      <MyContact >
     <TituloContato>Alan de Oliveira Ribeiro Moraes</TituloContato>
 
     <IconesContainer><Icone href="https://www.linkedin.com/in/alan-de-oliveira-ribeiro-moraes/"><SiLinkedin /></Icone><Icone href="https://github.com/ArM-08"><SiGithub/></Icone><Icone href="mailto: alanmoraesdev@gmail.com"><SiGmail/></Icone> <Icone href=""><SiWhatsapp/></Icone></IconesContainer>

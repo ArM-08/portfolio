@@ -5,6 +5,7 @@ export const Escrita = styled.div`
     font-family: 'Orbitron', sans-serif;
     width: 100%;
     display:flex;
+  
    `
 
     export const Texto = styled.h1`
