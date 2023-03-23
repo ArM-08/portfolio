@@ -1,6 +1,6 @@
 
 import { Container, SobreContainer, ImgPerfil, MessageContainer, TextoSobre, ContainerButton, Button, MidiasContainer, ButtonMidia, ContainerPerfil, FundoImg, CircleImg} from "./styled";
-import Linkedin from "./../../assets/images/Linkedin.png"
+import Linkedin from "./../../assets/images/linkedin.png"
 import GitHub from "./../../assets/images/gitHub.png"
 import perfil from "./../../assets/images/perfilpng.png"
 
