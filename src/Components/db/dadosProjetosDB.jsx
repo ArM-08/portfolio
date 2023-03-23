@@ -33,8 +33,8 @@ export const ProjetosDB = [
       categoria: "frontEnd",
       tecnologias: <><SiReact title="React"/><SiJavascript title="JavaScript"/><SiStyledcomponents title="Styledcomponents"/><SiVite title="Vite"/><SiVercel title="Vercel"/>  </>,
       image: Portfolio,
-      description: "Projeto de criaçao de um portfolio, Em construção "
-      , link: "https://bna-viagem.vercel.app/", 
+      description: "Projeto de criaçao de um portfolio. Projeto em Construção"
+      , link: "https://portfolio-cvto.vercel.app", 
       github: "https://github.com/ArM-08/portfolio",
           chave: "PORTFOLIO, FRONTEND,  REACT, JAVASCRIPT ,STYLEDCOMPONENTS, VITE, VERCEL "
       },
