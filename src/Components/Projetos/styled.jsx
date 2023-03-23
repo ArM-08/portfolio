@@ -31,6 +31,6 @@ width: 100%;
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
-gap: 3vh;
+gap: 4vh;
 padding: 10px;
 `

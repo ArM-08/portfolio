@@ -1,10 +1,18 @@
-import { SiBootstrap, SiCss3, SiHtml5, SiJava, SiJavascript, SiMongodb, SiMysql, SiReact, SiSpringboot, SiStyledcomponents } from "react-icons/si";
+import { SiBootstrap, SiCss3, SiHtml5, SiJava, SiJavascript, SiMongodb, SiMysql, SiReact, SiSpringboot, SiStyledcomponents, SiTypescript, SiPython } from "react-icons/si";
 
 export const HabilidadesDB = [
     {
         id: 1,
         name: "JavaScript",
     img: <SiJavascript/>},
+    {
+        id: 11,
+        name: "TypeScript",
+    img: <SiTypescript/>},
+    {
+        id: 12,
+        name: "Python",
+    img: <SiPython/>},
     {
         id: 2,
         name: "Java",

@@ -30,10 +30,6 @@ const Habilidades = () => {
                   descricao: "Motorista de Aplicativo - Uber · Autônomo",
                 },
                 {
-                  title: "2019 - 2021",
-                  descricao: "Criador de Conteúdo - Twitch",
-                },
-                {
                   title: "2011 - 2019",
                   descricao:
                     "Cabo (Motorista Categoria D) - Exército Brasileiro",
@@ -45,6 +41,10 @@ const Habilidades = () => {
             <Titulo data-aos="fade-down-left">Formação Acadêmica</Titulo>
             <TimeLine
               items={[
+                {
+                  title: "2023 - 2024",
+                  descricao: "Análise e Desenvolvimento de Sistemas",
+                },
                 {
                   title: "2022 - 2022",
                   descricao: "Desenvolvedor Full Stack - RecodePro",
