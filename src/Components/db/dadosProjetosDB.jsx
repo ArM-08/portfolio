@@ -13,7 +13,7 @@ import {
 import BNA from "./../../assets/images/BNA.png"
 import Aviagem from "./../../assets/images/Aviagem.png"
 import EducAgro from "./../../assets/images/EducAgro.png"
-import Portfolio from "./../../assets/images/Portfolio.png"
+import Portfolio from "./../../assets/images/portfolio.png"
 import Lacrei from "./../../assets/images/Lacrei.png"
 import EmConstrucao from "./../../assets/images/Emconstrucao.png"
 
