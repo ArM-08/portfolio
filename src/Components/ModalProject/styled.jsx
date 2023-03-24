@@ -5,9 +5,7 @@ import fecharImg from "./../../assets/images/fechar.png"
 export const Modal = styled.div`
 position: fixed;
 border-radius: 20px;
-top: 25%;
-left: 20%;
-right: 20%;
+margin: 0 auto;
 background: #FFF;
 z-index: 998;
 height:auto;
@@ -58,8 +56,8 @@ transition: transform 1s;
 export const Background = styled.div`
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+
+  width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
  
@@ -126,7 +124,7 @@ text-align: center;
 
 export const DescricaoModal = styled.p`
 font-family: 'DM Sans', sans-serif;
-
+text-align: center;
 overflow: auto;
 `
 

@@ -23,7 +23,7 @@ export const ProjetosDB = [
     categoria: "frontEnd",
     tecnologias: <><SiReact title="React"/><SiJavascript title="JavaScript"/><SiAntdesign title="AntDesign"/><SiCss3 title="CSS3"/><SiVite title="Vite"/><SiVercel title="Vercel"/>  </>,
     image: BNA,
-    description: "Projeto pessoal para aplicar novos conhecimentos"
+    description: "Este é um projeto web desenvolvido com React, JavaScript e Ant Design para oferecer informações de viagens internacionais e nacionais aos usuários. O projeto foi desenvolvido como um projeto pessoal."
     , link: "https://bna-viagem.vercel.app/", 
     github: "https://github.com/ArM-08/bnaViagem",
         chave: "BNA VIAGEM, FRONTEND,  REACT, JAVASCRIPT ,ANTDESIGN, CSS3, VITE, VERCEL "
@@ -43,7 +43,7 @@ name: "AViagem",
 categoria: "frontEnd",
 tecnologias: <><SiReact title="React"/><SiJavascript title="JavaScript"/><SiBootstrap title="BootsStrap"/><SiCss3 title="CSS3"/><SiReact title=" Create React App"/><SiNetlify title="Netlify"/>  </>,
 image: Aviagem,
-description: "Projeto RECODE PRO 2022 - Desenvolvido em JavaScript com bootstrap"
+description: "Este é um projeto web de um site de viagens desenvolvido com React, JavaScript e BootStrap. O projeto foi desenvolvido no curso RECODE PRO 2022."
 , link: "https://aviagem.vercel.app/", 
 github: "https://github.com/ArM-08/aviagem",
     chave: "AVIAGEM, FRONTEND,  REACT, JAVASCRIPT ,BOOTSTRAP, CSS3, CREATE REACT APP, NETLIFY "
@@ -53,7 +53,7 @@ github: "https://github.com/ArM-08/aviagem",
     categoria: "frontEnd",
     tecnologias: <><SiReact title="React"/><SiJavascript title="JavaScript"/><SiCss3 title="CSS3"/><SiReact title=" Create React App"/><SiNetlify title="Netlify"/>  </>,
     image: EducAgro,
-    description: "EducAgro - Entrega final do projeto EDUCAGRO Recode 2022 Desenvolvido em Java utilizando Springboot."
+    description: "EducAgro - Projeto que visa  diminuir o analfabetismo em áreas rurais, podendo auxiliar professores e voluntárias nesses locais. Entrega final do projeto EDUCAGRO Recode 2022 Desenvolvido em Java utilizando Springboot."
     , link: "https://educagro.netlify.app/home.html", 
     github: "https://github.com/squad-27-2022/EducAgro-Final",
     chave: "EducAgro, FRONTEND,  REACT, JAVASCRIPT, CSS3, VITE, VERCEL "

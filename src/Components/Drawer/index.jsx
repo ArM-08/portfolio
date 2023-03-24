@@ -6,20 +6,20 @@ const Drawer = ({ open }) => {
   
   const Sobre = () => {
     window.scrollTo({
-      top: 800,
+      top: 950,
       behavior: "smooth",
     });
   };
 
   const Projetos = () => {
     window.scrollTo({
-      top: 3000,
+      top: 2825,
       behavior: "smooth",
     });
   };
   const Contato = () => {
     window.scrollTo({
-      top: 3000,
+      top: 5000,
       behavior: "smooth",
     });
   };

@@ -19,7 +19,7 @@ export const HabilidadesDB = [
     img: <SiJava/>},
     {
         id: 3,
-        name: "ReactJS",
+        name: "React",
     img: <SiReact/>},{
         id: 4,
         name: "HTML5",

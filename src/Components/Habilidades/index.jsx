@@ -14,15 +14,15 @@ import { HabilidadesDB } from "../db/dadosHabilidadesDB";
 const Habilidades = () => {
   return (
     <BackgroundHabilidade >
-      <ContainerHabilidade >
-        <Titulo data-aos="fade-down-right">Habilidades tecnicas</Titulo>
-        <ContainerCard data-aos="fade-up-right" >
+      <ContainerHabilidade data-aos="fade-up">
+        <Titulo>Habilidades tecnicas</Titulo>
+        <ContainerCard  >
           {HabilidadesDB.map(habilidades => 
            <Card  key={habilidades.id} titulo={habilidades.name} img={habilidades.img}></Card> )}
         </ContainerCard>
         <ContainerFormacao>
-          <ExpProfissional data-aos="fade-down-right">
-            <Titulo data-aos="fade-down-right">Experiência Profissional</Titulo>
+          <ExpProfissional >
+            <Titulo >Experiência Profissional</Titulo>
             <TimeLine 
               items={[
                 {
@@ -36,9 +36,10 @@ const Habilidades = () => {
                 },
               ]} 
             />
+        
           </ExpProfissional>
-          <FormacaoAcademica  data-aos="fade-down-left">
-            <Titulo data-aos="fade-down-left">Formação Acadêmica</Titulo>
+          <FormacaoAcademica  >
+            <Titulo >Formação Acadêmica</Titulo>
             <TimeLine
               items={[
                 {
