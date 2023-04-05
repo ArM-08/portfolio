@@ -19,7 +19,7 @@ conhecimento teórico, a fim de aprimorar e expandir meus conhecimentos, visando
 qualificação profissional.</TextoSobre>
           <ContainerButton>
             <Button as="a" href="mailto: alanmoraesdev@gmail.com">Contato</Button>
-            <Button as="a"href="https://drive.google.com/uc?export=download&id=1hxGpH7aL18FdT4B0ySsFF5jmkyOBjsXz">Download CV</Button>
+            <Button as="a"href="https://drive.google.com/uc?export=download&id=1ovAbnoaR5aYx76Dd2S6WwyF9PHM0hMBn">Download CV</Button>
           </ContainerButton>
           </MessageContainer>
          
