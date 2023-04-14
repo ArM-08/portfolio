@@ -26,13 +26,21 @@ export const SetaContainer = styled.div`
   bottom: 0%;
   left: 50%;
   right: 50%;
+  @media(max-width: 480px){
+    left: 40%;
+    right: 40%;
+  }
 `;
 
 export const Seta = styled.div`
   position: absolute;
 
-  width: 3.1rem;
-  height: 0.5rem;
+  width: 2.5rem;
+  height: 0.4rem;
+  @media(max-width: 480px){
+    width: 1.5rem;
+    height: 0.3rem;
+  }
   opacity: 0;
   transform: scale(0.3);
   -webkit-animation: move 3s ease-out infinite;

@@ -27,6 +27,9 @@ const Drawer = ({open}) => {
         <Link to="sobre" spy={true} duration={500} offset={-100}>Sobre</Link>
         </OpçãoMenu>
         <OpçãoMenu tamanhoFonte={"20px"}>
+        <Link to="habilidades" spy={true} duration={500} offset={-100}>Conhecimentos</Link>
+        </OpçãoMenu>
+        <OpçãoMenu tamanhoFonte={"20px"}>
         <Link to="projetos" spy={true} duration={500} offset={-100}>Projetos</Link>
         </OpçãoMenu>
         <OpçãoMenu onClick={Contato} tamanhoFonte={"20px"}>

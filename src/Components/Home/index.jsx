@@ -14,12 +14,9 @@ const Home = () => {
   return (
     <BackgroundHome>
       <HomeContainer >
-        <Message 
-          textAlign="center"
-          alignSelf="center"
+        <Message  
           text="Prazer, me chamo Alan Moraes. Desenvolvedor Full Stack.
 "
-          fontSize="60px"
         />
         <SetaContainer onClick={SetaScroll}>   
         <Seta></Seta>

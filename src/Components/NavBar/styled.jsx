@@ -25,7 +25,7 @@ color: #FFF;
 position: absolute;
 left: 5%;
 top: 25px;
-@media (max-width: 768px) {
+@media (max-width: 908px) {
 
   right: 0%;
   @media(max-width: 480px){
@@ -79,7 +79,7 @@ visibility: hidden;
     }
   }
 
-@media (max-width: 768px) {
+@media (max-width: 908px) {
   visibility: visible;
 }
 `

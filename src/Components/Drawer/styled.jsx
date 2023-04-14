@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const DrawerStyled = styled.div`
 
 position: absolute;
-right: -5%;
+right: -10%;
 top: 50px;
     transform: translate(-50%, -50%);
   font-size: 45px;
   transition: 1s 0.1s cubic-bezier(0, 1.03, 0, 1.00);
   z-index: 99;
    
-  @media (max-width: 768px){
+  @media (max-width: 908px){
     align-items: center;
     top: 100px;
     right: 0;
