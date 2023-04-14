@@ -1,20 +1,21 @@
 import { DrawerStyled, Menu, OpçãoMenu } from "./styled";
 import { bool } from "prop-types";
 
-const Drawer = ({ open }) => {
-
+const Drawer = ({open}) => {
   
   const Sobre = () => {
     window.scrollTo({
       top: 950,
       behavior: "smooth",
     });
+
   };
 
   const Projetos = () => {
     window.scrollTo({
       top: 2825,
       behavior: "smooth",
+      
     });
   };
   const Contato = () => {
@@ -23,6 +24,7 @@ const Drawer = ({ open }) => {
       behavior: "smooth",
     });
   };
+
   return (
     <DrawerStyled open={open}>
       <Menu>
