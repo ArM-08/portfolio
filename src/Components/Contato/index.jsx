@@ -7,7 +7,7 @@ const Contato = () => {
     <Container id="contato" >
     <Faixa>
       </Faixa>
-      <ContactContainer data-aos="fade-up"
+      <ContactContainer data-aos="fade-left"
     >
       
       <MyContact >

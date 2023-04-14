@@ -14,7 +14,7 @@ const Sobre =  () => {
         <Container id="sobre">
           
         <SobreContainer >
-        <MessageContainer data-aos="fade-up">
+        <MessageContainer data-aos="fade-left">
           <TextoSobre className='show'>Profissional graduado em Gestão da Tecnologia da Informação e cursando Análise e Desenvolvimento 
 de Sistemas, em fase de transição de carreira, a procura de uma oportunidade na área de TI, a fim de 
 aprimorar e expandir meus conhecimentos, visando sempre uma boa qualificação profissional. </TextoSobre>
