@@ -18,7 +18,7 @@ const NavBar = () => {
 
         <NavContainer>
             <Logo onClick={Inicio}>Alan Moraes</Logo>
-           <Drawer open={open}></Drawer>
+           <Drawer open={open} ></Drawer>
            <BtnHamBurger open={open} onClick={() => setOpen(!open)}>
       <div />
       <div />

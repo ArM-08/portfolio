@@ -8,9 +8,9 @@ import Projetos from "./Components/Projetos"
 import Contato from "./Components/Contato"
 import Habilidades from "./Components/Habilidades"
 
-import AOS from 'aos';
+import AOS, { refresh } from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 
 const ContainerApp = styled.div`
 width: 100vw;
@@ -20,13 +20,15 @@ margin:0 auto;
 
 
 function App() {
+
   useEffect(()=> {
     AOS.init({duration: 2500})
   });
   
+
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <ContainerApp>
       <Home/>
       <Sobre/>

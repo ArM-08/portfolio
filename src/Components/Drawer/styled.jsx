@@ -41,7 +41,7 @@ width:100%;
 `;
 
 
-export const OpçãoMenu = styled.a`
+export const OpçãoMenu = styled.p`
 cursor:pointer;
 text-decoration: none;
 color: #fff;

@@ -1,19 +1,14 @@
+import { Link } from "react-scroll";
 import { DrawerStyled, Menu, OpçãoMenu } from "./styled";
 import { bool } from "prop-types";
 
 const Drawer = ({open}) => {
   
-  const Sobre = () => {
-    window.scrollTo({
-      top: 950,
-      behavior: "smooth",
-    });
 
-  };
-
+  
   const Projetos = () => {
     window.scrollTo({
-      top: 2825,
+      top: 2800,
       behavior: "smooth",
       
     });
@@ -28,14 +23,14 @@ const Drawer = ({open}) => {
   return (
     <DrawerStyled open={open}>
       <Menu>
-        <OpçãoMenu onClick={Sobre} tamanhoFonte={"20px"}>
-          Sobre
+        <OpçãoMenu tamanhoFonte={"20px"}>
+        <Link to="sobre" spy={true} duration={500} offset={-100}>Sobre</Link>
         </OpçãoMenu>
-        <OpçãoMenu onClick={Projetos} tamanhoFonte={"20px"}>
-          Projetos
+        <OpçãoMenu tamanhoFonte={"20px"}>
+        <Link to="projetos" spy={true} duration={500} offset={-100}>Projetos</Link>
         </OpçãoMenu>
         <OpçãoMenu onClick={Contato} tamanhoFonte={"20px"}>
-          Contato
+        <Link to="contato" spy={true} duration={500} offset={-100}>Contato</Link>
         </OpçãoMenu>
       </Menu>
     </DrawerStyled>

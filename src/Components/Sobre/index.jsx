@@ -3,14 +3,16 @@ import { Container, SobreContainer, ImgPerfil, MessageContainer, TextoSobre, Con
 import Linkedin from "./../../assets/images/linkedin.png"
 import GitHub from "./../../assets/images/gitHub.png"
 import perfil from "./../../assets/images/perfilpng.png"
+import React from "react";
 
 
 
-
-const Sobre = () => {
+const Sobre =  () => {
 
     return(
-        <Container>
+      
+        <Container id="sobre">
+          
         <SobreContainer >
         <MessageContainer data-aos="fade-up">
           <TextoSobre className='show'>Profissional graduado em Gestão da Tecnologia da Informação e cursando Análise e Desenvolvimento 
@@ -35,6 +37,7 @@ aprimorar e expandir meus conhecimentos, visando sempre uma boa qualificação p
           </SobreContainer>
          
             </Container>
+           
     )
 }
 
