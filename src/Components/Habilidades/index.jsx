@@ -14,7 +14,7 @@ import { HabilidadesDB } from "../db/dadosHabilidadesDB";
 const Habilidades = () => {
   return (
     <BackgroundHabilidade >
-      <ContainerHabilidade data-aos="fade-up" id="habilidades">
+      <ContainerHabilidade data-aos="fade-right" id="habilidades">
         <Titulo>Conhecimentos</Titulo>
         <ContainerCard  >
           {HabilidadesDB.map(habilidades => 
