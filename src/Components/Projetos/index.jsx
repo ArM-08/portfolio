@@ -16,7 +16,7 @@ const Projetos = () => {
   }
 
   return (
-    <ProjetosContainer data-aos="fade-left" id="projetos"
+    <ProjetosContainer data-aos="fade-right" id="projetos"
     >
       <TitleProjeto >Projetos</TitleProjeto>
       <InputPesquisa placeholder="Pesquise por nome, categoria ou stacks " onChange={evento => fazPesquisa(evento)}></InputPesquisa>
